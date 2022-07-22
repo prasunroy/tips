@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZ6F34C05N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WZ6F34C05N');
+  </script>
+  <!-- Primary metadata -->
+  <meta charset="utf-8">
+  <meta name="author" content="Prasun Roy">
+  <meta name="description" content="The European Conference on Computer Vision (ECCV) 2022.">
+  <meta name="keywords" content="TIPS, Text-Guided Generation, Pose Transfer, GAN, DeepFashion, DF-PASS, ECCV, ECCV 2022">
+  <!-- Open Graph metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prasunroy.github.io/tips">
+  <meta property="og:title" content="TIPS: Text-Induced Pose Synthesis">
+  <meta property="og:description" content="The European Conference on Computer Vision (ECCV) 2022.">
+  <meta property="og:image" content="https://prasunroy.github.io/tips/static/social_preview.png">
+  <!-- Twitter metadata -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://prasunroy.github.io/tips">
+  <meta property="twitter:title" content="TIPS: Text-Induced Pose Synthesis">
+  <meta property="twitter:description" content="The European Conference on Computer Vision (ECCV) 2022.">
+  <meta property="twitter:image" content="https://prasunroy.github.io/tips/static/social_preview.png">
+  <!-- Title -->
+  <title>TIPS: Text-Induced Pose Synthesis</title>
+  <!-- External resource links -->
+  <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom styles -->
+  <style type="text/css">
+    html,
+    body {
+      font-family: 'Roboto', sans-serif;
+      padding: 0.0rem 1.0rem 0.0rem 1.0rem;
+    }
+    a:hover,
+    a:active {
+      color: #ff6464;
+      text-decoration: none;
+    }
+    .tips-header-1 {
+      padding: 1.0rem 0.0rem 1.0rem 0.0rem;
+    }
+    .tips-header-2 {
+      padding: 1.5rem 0.0rem 0.5rem 0.0rem;
+    }
+    .tips-header-title {
+      font-family: 'Bree Serif', sans-serif;
+    }
+    .tips-link {
+      color: #4a4a4a;
+    }
+    .tips-link-grid-icon {
+      margin: 2.0rem 0.0rem 0.0rem 0.0rem;
+    }
+    .tips-link-grid-text {
+      padding: 0.0rem 0.0rem 0.0rem 0.0rem;
+    }
+    .tips-media-container {
+      padding: 0px 10px 0px 10px;
+      height: 510px;
+      overflow: auto;
+    }
+    .tips-news-container {
+      padding: 1.5rem 1.0rem 1.5rem 1.0rem;
+    }
+    .tips-scroll-area {
+      scrollbar-width: 5px;
+      scrollbar-color: #808080 #e1e1e1;
+    }
+    .tips-scroll-area::-webkit-scrollbar {
+      width: 5px;
+    }
+    .tips-scroll-area::-webkit-scrollbar-thumb {
+      background-color: #808080;
+    }
+    .tips-scroll-area::-webkit-scrollbar-track {
+      background-color: #e1e1e1;
+    }
+    .tips-shadow {
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    .tips-text {
+      color: #8000ff;
+    }
+    .tips-tweet {
+      color: #00acee;
+    }
+    .tips-video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      max-width: 100%;
+      height: 0;
+      overflow: hidden;
+    }
+    .tips-video-container embed, .tips-video-container iframe, .tips-video-container object {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container box is-shadowless">
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full has-text-centered">
+        <div class="tips-header-1">
+          <h1 class="title is-size-5-mobile is-size-4-tablet is-size-3-desktop is-size-2-widescreen tips-header-title">
+            <span class="tips-text">TIPS</span>: Text-Induced Pose Synthesis
+          </h1>
+          <p class="is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-6-widescreen">
+            <a href="https://scholar.google.com/citations?user=n6T5cSsAAAAJ&hl=en" target="_blank">Prasun Roy</a> <sup>1</sup> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=vTSn-xkAAAAJ&hl=en" target="_blank">Subhankar Ghosh</a> <sup>1</sup> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=8pffuA4AAAAJ&hl=en" target="_blank">Saumik Bhattacharya</a> <sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=2_z_CogAAAAJ&hl=en" target="_blank">Umapada Pal</a> <sup>3</sup> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=4m2G-H8AAAAJ&hl=en" target="_blank">Michael Blumenstein</a> <sup>1</sup>
+            <br>
+            <sup>1</sup> <a class="tips-link" href="https://www.uts.edu.au/" target="_blank">University of Technology Sydney</a>
+            <br>
+            <sup>2</sup> <a class="tips-link" href="http://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>
+            <br>
+            <sup>3</sup> <a class="tips-link" href="https://www.isical.ac.in/" target="_blank">Indian Statistical Institute Kolkata</a>
+            <br>
+            <br>
+            <a class="tips-link" href="https://eccv2022.ecva.net/" target="_blank"><b><i>The European Conference on Computer Vision (ECCV) 2022</i></b></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full has-text-centered">
+        <figure class="image">
+          <img src="static/teaser.svg">
+        </figure>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-centered tips-header-2 tips-header-title">
+          <b>Abstract</b>
+        </h1>
+        <p class="subtitle is-size-6-mobile is-size-6-tablet is-size-6-desktop is-size-6-widescreen has-text-justified">
+          In computer vision, human pose synthesis and transfer deal with probabilistic image generation of a person in a previously unseen pose from an already available observation of that person. Though researchers have recently proposed several methods to achieve this task, most of these techniques derive the target pose directly from the desired target image on a specific dataset, making the underlying process challenging to apply in real-world scenarios as the generation of the target image is the actual aim. In this paper, we first present the shortcomings of current pose transfer algorithms and then propose a novel text-based pose transfer technique to address those issues. We divide the problem into three independent stages: (a) text to pose representation, (b) pose refinement, and (c) pose rendering. To the best of our knowledge, this is one of the first attempts to develop a text-based pose transfer framework where we also introduce a new dataset DF-PASS, by adding descriptive pose annotations for the images of the DeepFashion dataset. The proposed method generates promising results with significant qualitative and quantitative scores in our experiments.
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-centered tips-header-2 tips-header-title">
+          <b>Network Architecture</b>
+        </h1>
+        <div class="has-text-centered">
+          <br>
+          <figure class="image">
+            <a href="static/network_architecture.svg" target="_blank">
+              <img src="static/network_architecture.svg">
+            </a>
+          </figure>
+          <br>
+          <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-6-widescreen has-text-danger">
+            <b>Click on the diagram for a zoomed view of the network architecture (Opens a new tab).</b>
+          </p>
+          <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-6-widescreen has-text-justified">
+            The workflow is divided into three stages. In stage 1, we estimate a spatial representation \(K^*_B\) for the target pose \(P_B\) from the corresponding text description embedding \(v_B\). In stage 2, we regressively refine the initial estimation of the facial keypoints to obtain the refined target keypoints \(\tilde{K}^*_B\). Finally, in stage 3, we render the target image \(\tilde{I}_B\) by conditioning the pose transfer on the source image \(I_A\) having the keypoints \(K_A\) corresponding to the source pose \(P_A\).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-centered tips-header-2 tips-header-title">
+          <b>Generation Results</b>
+        </h1>
+        <div class="has-text-centered">
+          <br>
+          <figure class="image">
+            <img src="static/results.svg">
+          </figure>
+          <br>
+          <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-6-widescreen has-text-justified">
+            Keypoints-guided methods tend to produce structurally inaccurate results when the physical appearance of the target pose reference significantly differs from the condition image. This observation is more frequent for the <i>out of distribution</i> target poses than the <i>within distribution</i> target poses. On the other hand, the existing text-guided method occasionally misinterprets the target pose due to a limited set of basic poses used for pose representation. The proposed text-guided technique successfully addresses these issues while retaining the ability to generate visually decent results close to the keypoints-guided baseline.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-centered tips-header-2 tips-header-title">
+          <b>Paper and Supplementary Materials</b>
+        </h1>
+        <br>
+        <div class="has-text-centered">
+          <div class="columns is-multiline is-centered is-mobile tips-link-grid-icon">
+            <div class="column is-one-fifth has-text-centered has-text-grey">
+              <i class="fa-regular fa-file-pdf fa-5x"></i>
+            </div>
+            <div class="column is-one-fifth has-text-centered has-text-grey">
+              <i class="fa-regular fa-file-pdf fa-5x"></i>
+            </div>
+            <div class="column is-one-fifth has-text-centered has-text-dark">
+              <i class="fa-brands fa-github fa-5x"></i>
+            </div>
+            <div class="column is-one-fifth has-text-centered has-text-success">
+              <i class="fa-brands fa-google-drive fa-5x"></i>
+            </div>
+            <div class="column is-one-fifth has-text-centered has-text-warning">
+              <i class="fa-solid fa-infinity fa-5x"></i>
+            </div>
+            <div class="column is-one-fifth has-text-centered tips-link-grid-text">
+              <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-5-widescreen has-text-grey">
+                <!-- <a href="https://www.ecva.net/" target="_blank"> -->
+                  Preprint Paper<br>@ arXiv
+                <!-- </a> -->
+              </p>
+            </div>
+            <div class="column is-one-fifth has-text-centered tips-link-grid-text">
+              <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-5-widescreen has-text-grey">
+                <!-- <a href="https://www.ecva.net/" target="_blank"> -->
+                  Publication<br>@ ECVA Open Access
+                <!-- </a> -->
+              </p>
+            </div>
+            <div class="column is-one-fifth has-text-centered tips-link-grid-text">
+              <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-5-widescreen">
+                <a href="https://github.com/prasunroy/tips" target="_blank">
+                  Code<br>@ GitHub
+                </a>
+              </p>
+            </div>
+            <div class="column is-one-fifth has-text-centered tips-link-grid-text">
+              <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-5-widescreen">
+                <a href="https://drive.google.com/drive/folders/1JdoeIoNhUBzmpf8GJzTul6-iav5JVFEo" target="_blank">
+                  Datasets + Models<br>@ Google Drive
+                </a>
+              </p>
+            </div>
+            <div class="column is-one-fifth has-text-centered tips-link-grid-text">
+              <p class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-5-widescreen">
+                <a href="https://colab.research.google.com/drive/1CHZ4X43rEAV0xb4IOK2Xj6yvL9pJyM_E" target="_blank">
+                  Demo<br>@ Google Colab
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-left tips-header-2 tips-header-title">
+          <b>Citation</b>
+        </h1>
+<pre class="subtitle is-size-7-mobile is-size-7-tablet is-size-6-desktop is-size-6-widescreen has-text-left">
+@InProceedings{Roy_2022_ECCV,
+  title     = {TIPS: Text-Induced Pose Synthesis},
+  author    = {Roy, Prasun and Ghosh, Subhankar and Bhattacharya, Saumik and Pal, Umapada and Blumenstein, Michael},
+  booktitle = {The European Conference on Computer Vision (ECCV)},
+  month     = {October},
+  year      = {2022}
+}
+</pre>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-half-tablet is-two-thirds-desktop">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-left tips-header-2 tips-header-title">
+          <b>News and Updates</b>
+        </h1>
+        <div class="tips-media-container tips-scroll-area tips-shadow">
+          <div class="tips-news-container">
+            <h1 class="title is-size-5 has-text-left has-text-grey tips-header-title">
+              <span class="icon has-text-primary"><i class="fa-solid fa-calendar-days"></i></span>&nbsp;&nbsp;Jul 25, 2022
+            </h1>
+            <p class="subtitle is-size-6">
+              We have released our paper, supplementary materials, code, datasets and pretrained models.<a href="https://twitter.com/_prasunroy/status/1543841725088686080" target="_blank"><span class="icon tips-tweet"><i class="fa-brands fa-twitter"></i></span></a>
+              <br>
+              <a class="github-button" href="https://github.com/prasunroy/tips" data-icon="octicon-star" data-show-count="true" aria-label="Star prasunroy/tips on GitHub">Star</a>
+              <a class="github-button" href="https://github.com/prasunroy/tips/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork prasunroy/tips on GitHub">Fork</a>
+            </p>
+          </div>
+          <div class="tips-news-container">
+            <h1 class="title is-size-5 has-text-left has-text-grey tips-header-title">
+              <span class="icon has-text-primary"><i class="fa-solid fa-calendar-days"></i></span>&nbsp;&nbsp;Jul 4, 2022
+            </h1>
+            <p class="subtitle is-size-6">
+              Our paper is accepted in <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a>.<span class="icon has-text-danger"><i class="fa-solid fa-heart"></i></span>
+              <br>
+              More details about the code and datasets will be released soon.<a href="https://twitter.com/_prasunroy/status/1543841725088686080" target="_blank"><span class="icon tips-tweet"><i class="fa-brands fa-twitter"></i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-tablet is-one-third-desktop">
+        <h1 class="is-size-5-mobile is-size-5-tablet is-size-4-desktop is-size-4-widescreen has-text-left tips-header-2 tips-header-title">
+          <b>On Twitter</b>
+        </h1>
+        <div class="tips-media-container tips-scroll-area tips-shadow">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thrilled 🤩 to have our 1/1 paper accepted in <a href="https://twitter.com/hashtag/ECCV2022?src=hash&amp;ref_src=twsrc%5Etfw">#ECCV2022</a>.<br><br>Congratulations to my amazing teammates Saumik and Subhankar. Many thanks to my advisors Prof Blumenstein and Prof Pal.<br><br>More on the paper coming soon!<a href="https://twitter.com/UTSEngage?ref_src=twsrc%5Etfw">@UTSEngage</a> <a href="https://twitter.com/UTSFEIT?ref_src=twsrc%5Etfw">@UTSFEIT</a> <a href="https://twitter.com/ProfBlumenstein?ref_src=twsrc%5Etfw">@ProfBlumenstein</a></p>&mdash; Prasun Roy (@_prasunroy) <a href="https://twitter.com/_prasunroy/status/1543841725088686080?ref_src=twsrc%5Etfw">July 4, 2022</a></blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <div class="column is-full has-text-centered">
+        <p class="is-size-7 tips-header-2">
+          Copyright <span><i class="fa-solid fa-copyright"></i></span> 2022 by the authors |
+          Made with <span class="has-text-danger"><i class="fa-solid fa-heart animate__animated animate__jello animate__infinite"></i></span> on Earth.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script async defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js" charset="utf-8"></script>
+  <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>
