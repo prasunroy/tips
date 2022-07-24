@@ -40,7 +40,7 @@
 ### External Links
 <h4>
   <a href="https://prasunroy.github.io/tips">Project</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-  <a href="https://arxiv.org/abs/0000.00000">arXiv</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+  arXiv&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="https://drive.google.com/drive/folders/17cvo22Eh_Z_S6fb-J-c6qw97WH6UeIHo">DF-PASS Dataset</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="https://drive.google.com/drive/folders/1DwEcAPeYkXUNQ_SBhSJpydaLBTjh3_ms">Pretrained Models</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="https://colab.research.google.com/drive/1CHZ4X43rEAV0xb4IOK2Xj6yvL9pJyM_E">Colab Demo</a>
