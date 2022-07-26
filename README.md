@@ -94,6 +94,6 @@ limitations under the License.
 
 >The DF-PASS dataset and the pretrained models are released under Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) license.
 
-<br><br>
+<br>
 
 ##### Made with :heart: and :pizza: on Earth.
