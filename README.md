@@ -3,7 +3,7 @@
 *Accepted in the European Conference on Computer Vision (ECCV) 2022*
 
 [![badge_torch](https://img.shields.io/badge/made_with-PyTorch-red?style=flat-square&logo=PyTorch)](https://pytorch.org/)
-[![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/drive/1CHZ4X43rEAV0xb4IOK2Xj6yvL9pJyM_E)
+[![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
 
 ![teaser](https://github.com/prasunroy/tips/blob/main/docs/static/teaser.svg)
 
@@ -31,22 +31,20 @@
 <br>
 
 ### Try the TIPS inference pipeline demo in Colab
-[![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/drive/1CHZ4X43rEAV0xb4IOK2Xj6yvL9pJyM_E)
+[![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
 
-[![tips_demo](https://github.com/prasunroy/tips/blob/main/docs/static/colab_enjoyer.svg)](https://colab.research.google.com/drive/1CHZ4X43rEAV0xb4IOK2Xj6yvL9pJyM_E)
+[![tips_demo](https://github.com/prasunroy/tips/blob/main/docs/static/colab_enjoyer.svg)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
 
 <br>
 
 ### External Links
 <h4>
   <a href="https://prasunroy.github.io/tips">Project</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-  arXiv&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+  <a href="http://arxiv.org/abs/2207.11718">arXiv</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="https://drive.google.com/drive/folders/17cvo22Eh_Z_S6fb-J-c6qw97WH6UeIHo">DF-PASS Dataset</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
   <a href="https://drive.google.com/drive/folders/1DwEcAPeYkXUNQ_SBhSJpydaLBTjh3_ms">Pretrained Models</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-  <a href="https://colab.research.google.com/drive/1CHZ4X43rEAV0xb4IOK2Xj6yvL9pJyM_E">Colab Demo</a>
+  <a href="https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb">Colab Demo</a>
 </h4>
-
->The preprint will be available by July 27, 2022 on arXiv.
 
 <br>
 
@@ -96,6 +94,6 @@ limitations under the License.
 
 >The DF-PASS dataset and the pretrained models are released under Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) license.
 
-<br>
+<br><br>
 
 ##### Made with :heart: and :pizza: on Earth.
