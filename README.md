@@ -1,8 +1,8 @@
-### Official repository for TIPS: Text-Induced Pose Synthesis
+### Official code for TIPS: Text-Induced Pose Synthesis.
 
-*Accepted in the European Conference on Computer Vision (ECCV) 2022*
+*Accepted in the European Conference on Computer Vision (ECCV) 2022.*
 
-[![badge_torch](https://img.shields.io/badge/made_with-PyTorch-red?style=flat-square&logo=PyTorch)](https://pytorch.org/)
+[![badge_torch](https://img.shields.io/badge/made_with-PyTorch-EE4C2C?style=flat-square&logo=PyTorch)](https://pytorch.org/)
 [![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
 
 ![teaser](https://github.com/prasunroy/tips/blob/main/docs/static/teaser.svg)
@@ -63,7 +63,7 @@
 
 ### Related Publications
 
-[1] [Multi-scale Attention Guided Pose Transfer](https://arxiv.org/abs/2202.06777) (arXiv 2022).
+[1] [Multi-scale Attention Guided Pose Transfer](https://arxiv.org/abs/2202.06777) (PR 2023).
 
 [2] [Scene Aware Person Image Generation through Global Contextual Conditioning](https://arxiv.org/abs/2206.02717) (ICPR 2022).
 
