@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project exlusions
+datasets/
+output/
+demo/checkpoints/
+demo/data/
+demo/output/
+notebooks/checkpoints/
+notebooks/data/
+notebooks/output/
