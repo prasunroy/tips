@@ -2,7 +2,7 @@
 
 *Accepted in the European Conference on Computer Vision (ECCV) 2022.*
 
-[![badge_torch](https://img.shields.io/badge/made_with-PyTorch-EE4C2C?style=flat-square&logo=PyTorch)](https://pytorch.org/)
+[![badge_torch](https://img.shields.io/badge/made_with-PyTorch_2.0-EE4C2C?style=flat-square&logo=PyTorch)](https://pytorch.org/)
 [![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
 
 ![teaser](https://github.com/prasunroy/tips/blob/main/docs/static/teaser.svg)
@@ -34,6 +34,61 @@
 [![badge_colab](https://img.shields.io/badge/Demo-Open_in_Colab-blue?style=flat-square&logo=googlecolab)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
 
 [![tips_demo](https://github.com/prasunroy/tips/blob/main/docs/static/colab_enjoyer.svg)](https://colab.research.google.com/github/prasunroy/tips/blob/main/notebooks/TIPS_demo.ipynb)
+
+<br>
+
+### :zap: Getting Started
+* Clone the project repository and install dependencies.
+```bash
+git clone https://github.com/prasunroy/tips.git
+cd tips
+mkdir datasets
+pip install -r requirements.txt
+```
+* Download the DF-PASS dataset from [Google Drive](https://drive.google.com/drive/folders/17cvo22Eh_Z_S6fb-J-c6qw97WH6UeIHo) and extract into `datasets/DF-PASS` directory.
+```
+tips
+├───datasets
+│   └───DF-PASS
+│       ├───gaussian_heatmaps
+│       ├───descriptions.csv
+│       ├───encodings.csv
+│       ├───test_img_keypoints.csv
+│       ├───test_img_list.csv
+│       ├───test_img_pairs.csv
+│       ├───train_img_keypoints.csv
+│       ├───train_img_list.csv
+│       └───train_img_pairs.csv
+└─── ...
+```
+
+<br>
+
+### :rocket: Running the demo locally
+* Download the pretrained checkpoints and test data from [Google Drive](https://drive.google.com/uc?export=download&id=1zTG9M06ckW0z4MvJks3-JSC8sJguiZJH) and extract into `tips/demo` directory.
+```
+tips
+├───demo
+│   ├───checkpoints
+│   │   ├───pose2pose_260500.pth
+│   │   ├───refinenet_100.pth
+│   │   └───text2pose_75000.pth
+│   ├───data
+│   │   ├───images
+│   │   ├───descriptions.csv
+│   │   ├───encodings.csv
+│   │   ├───img_pairs_df2df.csv
+│   │   ├───img_pairs_df2rw.csv
+│   │   ├───keypoints.csv
+│   │   └───FreeMono.ttf
+│   └─── ...
+└─── ...
+```
+* Run the demo notebook from `tips/demo` directory.
+```bash
+cd demo
+jupyter notebook TIPS_demo.ipynb
+```
 
 <br>
 
